@@ -1,0 +1,160 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:id="@+id/section_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- ROW 1 -->
+        <Button
+            android:background="@color/grey_light"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/but0_2"/>
+        <Button
+            android:background="@color/grey_light"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/but0_2"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/but0_1"/>
+        <Button
+            android:background="@color/grey_light"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/but0_1"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/but0_0"/>
+        <!-- Row 2 -->
+        <Button
+            android:background="@color/grey_light"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/but0_2"
+            android:layout_alignParentTop="true"
+            android:id="@+id/but1_2"/>
+        <Button
+            android:background="@color/grey_light"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/but0_1"
+            android:layout_below="@+id/but1_2"
+            android:id="@+id/but1_1"/>
+        <Button
+            android:background="@color/grey_light"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/but0_0"
+            android:layout_below="@+id/but1_1"
+            android:id="@+id/but1_0"/>
+        <!-- Row 3 -->
+        <Button
+            android:background="@color/grey_light"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/but1_2"
+            android:layout_alignParentTop="true"
+            android:id="@+id/but2_2"/>
+        <Button
+            android:background="@color/grey_light"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/but1_1"
+            android:layout_below="@+id/but2_2"
+            android:id="@+id/but2_1"/>
+        <Button
+            android:background="@color/grey_light"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/but1_0"
+            android:layout_below="@+id/but2_1"
+            android:id="@+id/but2_0"/>
+
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Automate Robot"
+            android:id="@+id/auto"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="190dp"
+            android:layout_marginStart="190dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:id="@+id/start"
+            android:layout_below="@+id/auto"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Obstacle"
+            android:id="@+id/obstacle"
+            android:layout_below="@+id/auto"
+            android:layout_toLeftOf="@+id/start" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Move Forward"
+            android:id="@+id/forward"
+            android:layout_below="@+id/start"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Turn"
+            android:id="@+id/turn"
+            android:layout_below="@+id/forward"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="reset"
+            android:id="@+id/reset"
+            android:layout_below="@+id/forward"
+            android:layout_toLeftOf="@+id/turn" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gather Samples"
+            android:id="@+id/clean"
+            android:layout_below="@+id/turn"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/clean">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Actions:"
+                android:id="@+id/action"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"/>
+        </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>

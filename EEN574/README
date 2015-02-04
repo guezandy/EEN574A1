@@ -1,0 +1,52 @@
+EEN574 Assignment #1 
+
+Question 1:
+Vacuum world Example
+Environment: 
+	Accessible, deterministic, episodic, discrete, static
+
+	initializeEnvironment() {
+		//sets the grid matrix 3x3, 4x4 etc.
+		//allows user to input dirt at a certain location
+		//provides interface for robot to communicate with environment
+	}
+Robot:
+	moveForward() {
+		//advances the robot to the location ahead of it
+		//checks for obstacles/hitting boundaries.
+	}
+
+	turn(direction) {
+		//sets the robots heading to the direction param.
+	}
+
+	checkForDirt() {
+		//interacts and analyzes the environment for dirt
+	}
+
+	clean() {
+		//interacts with the environment to remove dirt from location
+	}
+External:
+	automateRobot() {
+		//provides a predetermined path through the matrix
+		//checks and cleans each location
+	}
+
+Question 2: 
+See java files attached.
+Solution is done through Android Application.
+
+Subsumption architecture was almost the intuitive choice because of the simplicity of the interactions of the robot and the environment.
+
+Logic-based approach would’ve proved an interesting task but would require the robot to have more information on the environment from the start. If the robot knew the exact location of all the dirt then it could logically plan a course and travel along that course. 
+
+Question 3: 
+See java files attached
+Solution is done through Android Application
+
+Logic-based architecture functions off completing a task due to logical reasoning using information available.
+Reactive architecture's function off waiting for a specific action to happen and then the robot knows how to react to it. 
+
+Question 4: 
+NxN maze build on Android Application
